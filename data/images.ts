@@ -1,4 +1,4 @@
-import balenciLogo from "@/public/balenciLogo.svg";
+import balenciLogo from "@/public/BalenciLogo.svg";
 import gucciLogo from "@/public/GucciLogo.svg";
 import fendiLogo from "@/public/fendiLogo.svg";
 
