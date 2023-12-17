@@ -14,4 +14,4 @@ const Header = forwardRef(function index(props, ref) {
   )}
 )
 
-export default Header
+export default Header;

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { Copperplate } from "@/data/font";
+
+
 export const metadata: Metadata = {
   title: "OPULENT",
   description:
@@ -14,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+       className={Copperplate.className}
+      >{children}</body>
     </html>
   );
 }

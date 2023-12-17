@@ -7,7 +7,7 @@
     box-sizing: border-box;
     cursor: pointer;
     mix-blend-mode: difference;
-    z-index: 1;
+    z-index: 2;
     .burger{
         position: relative;
         display: flex;
@@ -20,7 +20,6 @@
             content: "";
             width: 30px;
             height: 2px;
-            border-radius: 10px;
             mix-blend-mode: difference;
             background-color: white;
         }

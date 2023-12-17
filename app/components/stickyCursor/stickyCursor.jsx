@@ -12,8 +12,6 @@ export default function index({stickyElement}) {
     x: useMotionValue(0),
     y: useMotionValue(0)
   }
-
-  //Smooth out the mouse values
   const smoothOptions = {damping: 20, stiffness: 300, mass: 0.5}
   const smoothMouse = {
     x: useSpring(mouse.x, smoothOptions),
@@ -24,20 +22,16 @@ export default function index({stickyElement}) {
     const { clientX, clientY } = e;
     const { left, top, height, width } = stickyElement.current.getBoundingClientRect();
 
-    //center position of the stickyElement
     const center = {x: left + width / 2, y: top + height / 2}
 
     if(isHovered){
 
-      //distance between the mouse pointer and the center of the custom cursor and 
       const distance = {x: clientX - center.x, y: clientY - center.y}
       
-      //move mouse to center of stickyElement + slightly move it towards the mouse pointer
       mouse.x.set((center.x - cursorSize / 2) + (distance.x * 0.1));
       mouse.y.set((center.y - cursorSize / 2) + (distance.y * 0.1));
     }
     else{
-      //move custom cursor to center of stickyElement
       mouse.x.set(clientX - cursorSize / 2);
       mouse.y.set(clientY - cursorSize / 2);
     }
@@ -47,7 +41,7 @@ export default function index({stickyElement}) {
     setIsHovered(true)
   }
 
-  const manageMouseLeave = (e ) => {
+  const manageMouseLeave = (e) => {
     setIsHovered(false)
   }
 
