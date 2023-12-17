@@ -1,0 +1,29 @@
+.section_text {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_text__title {
+    margin: 0;
+    font-family: Copperplate Gothic Bold;
+    font-size: 174px;
+    color: var(--color-black);
+    user-select: none;
+}
+
+.section_text__descr {
+    margin: 0;
+    font-family: Copperplate Gothic Bold;
+    font-size: 40px;
+    color: var(--color-black);
+    user-select: none;
+}
+
+.bgimage {
+    position: absolute;
+    pointer-events: none;
+}
