@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import styles from './style.module.scss';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 
-export default function index({stickyElement}) {
+export default function Index({stickyElement}) {
 
   const [isHovered, setIsHovered] = useState(false);
   const cursorSize = isHovered ? 60 : 15;
