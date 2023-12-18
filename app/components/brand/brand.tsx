@@ -8,7 +8,7 @@ export const Brand = () => {
         <div className={style.block}>
             {
                 logos.map((logo, index) => (
-                    <Image className={style.block__image} src={logo} key={index} alt="Brand logo" draggable="false"  data-scroll data-scroll-speed="-0.03"></Image>
+                        <Image className={style.block__image} src={logo} key={index} alt="Brand logo" draggable="false" data-scroll data-scroll-speed="-0.03"></Image>
                 ))
             }
         </div>
