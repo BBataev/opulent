@@ -45,11 +45,9 @@ export default function NavBar() {
           
           {navItems.map((data, index) => {
             return (
-              <Magnetic key={index}>
                 <Link key={index} href={data.href}>
                   {data.title}
                 </Link>
-              </Magnetic>
             );
           })}
         </div>

@@ -34,7 +34,7 @@
                 color: var(--color-white);
                 font-weight: 400;
                 transition: color .3s;
-                
+                transition: transform .2s ease-in-out;
                 &::before {
                     content: "";
                     position: absolute;
@@ -46,7 +46,7 @@
                     border-radius: 50%;
                     background-color: var(--color-white);
                     opacity: 0;
-                    transition: opacity .2s;
+                    transition: transform .2s ease-in-out, opacity .2s;
                 }
 
                 &:hover {

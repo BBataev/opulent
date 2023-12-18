@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import style from "./style.module.scss";
 
-import Magnetic from "../magnetic/magnetic";
-
 
 
 export const Collection = () => {
@@ -27,11 +25,9 @@ export const Collection = () => {
                 ))
             }
             </div>
-            <Magnetic data-scroll data-scroll-speed="-0.1">
-                <button className={style.collection__btn}>
-                    SEE MORE DROPS
-                </button>
-            </Magnetic>
+            <button className={style.collection__btn} data-hover={"SEE MORE DROPS"} data-scroll data-scroll-speed="-0.04">
+            SEE MORE DROPS
+            </button>
         </section>
     )
 }
