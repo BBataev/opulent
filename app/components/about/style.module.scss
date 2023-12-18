@@ -1,5 +1,10 @@
 .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 300px 205px 300px 341px;
+    margin-bottom: 127px;
     background-image: url("../../../public/backAbout.jpg");
     background-repeat: no-repeat;
     background-size: cover;

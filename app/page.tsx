@@ -8,6 +8,7 @@ import { Main } from "./components/main/Main";
 import { Brand } from "./components/brand/brand";
 import { Collection } from "./components/collection/Collection";
 import { About } from "./components/about/About";
+import { Footer } from "./components/footer/Footer";
 
 export default function Home() {
   useEffect( () => {
@@ -27,6 +28,7 @@ export default function Home() {
         <Brand/>
         <Collection />
         <About />
+        <Footer />
       </div>
     </>
   );
