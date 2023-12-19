@@ -25,9 +25,33 @@
     margin-bottom: 70px;
 }
 
-.collection_coats__coat {
+.collection_coats_block__coat {
+    position: relative;
     width: 368px;
     height: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &::before {
+        content: "";
+        background-image: attr(data-hover);
+        background-repeat: no-repeat;
+        background-size: 300px 100px;
+        z-index: 1;
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        display: block;
+        color: black;
+        transform: translateY(-100px);
+        transition: transform .3s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            transform: translateY(100px);
+        }
+    }
 }
 
 .collection__btn {

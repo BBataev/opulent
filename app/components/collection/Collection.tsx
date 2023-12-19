@@ -1,3 +1,5 @@
+"use client"
+
 import { coats } from "@/data/images";
 import Image from "next/image";
 
@@ -14,14 +16,16 @@ export const Collection = () => {
             <div className={style.collection_coats} data-scroll data-scroll-speed="-0.03">
             {
                 coats.map((coat, index) => (
-                    <Image
-                        className={style.collection_coats__coat}
-                        src={coat}
-                        key={index}
-                        alt="Exclusive coats"
-                        draggable="false"
-                    >
-                    </Image>
+                    <div className={style.collection_coats_block__coat} key={index}>
+                        <Image
+                            className={style.collection_coats_block__coat}
+                            src={coat.image}
+                            key={index}
+                            alt="Exclusive coats"
+                            draggable="false"
+                        >
+                        </Image>
+                    </div>
                 ))
             }
             </div>

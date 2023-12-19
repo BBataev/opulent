@@ -9,20 +9,22 @@ export const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
+    <>
+    <div className={styles.header_burgerl}>
+          <div
+            className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}
+            onClick={() => {
+              setIsActive(!isActive);
+            }}
+          >
+            <div className={styles.bounds}></div>
+          </div>
+    </div>
     <div className={styles.header}>
-      <Magnetic className={styles.dunno}>
-        <div
-          className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}
-          onClick={() => {
-            setIsActive(!isActive);
-          }}
-        >
-          <div className={styles.bounds}></div>
-        </div>
-      </Magnetic>
       <AnimatePresence mode="wait">
         {isActive && <NavBar />}
       </AnimatePresence>
     </div>
+    </>
   );
 };

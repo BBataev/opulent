@@ -31,7 +31,7 @@ export const Footer = () => {
                     }
                 </div>
             </div>
-            <div className={style.footer_blockBottom}>
+            <div className={style.footer_blockBottom} data-scroll data-scroll-speed="0.04">
                 <div className={style.footer_blockBottom_container}>
                 <h2 className={style.footer_blockBottom__title}>
                     Fiesio Beluchi -- director, designer
