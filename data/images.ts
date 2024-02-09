@@ -23,19 +23,19 @@ export const coats = [
         {
                 image: gucci2,
                 url: gucciLogoBlack,
-                info: "Best elite dress ever",
+                info: "Just imagine how hard should you suck for that dress",
                 cost: "14.920$",
         },
         {
                 image: balenci2,
                 url: balenciLogoBlack,
-                info: "Best elite dress ever",
+                info: "Balenci coat for a woman who's gonna be fucked in the ass twice",
                 cost: "19.320$",
         },
         {
                 image: fendi1,
                 url: fendiLogoBlack,
-                info: "Best elite dress ever",
+                info: "See you sluttty on the cross of ur-ass-road",
                 cost: "12.560$",
         },
         {
@@ -48,13 +48,13 @@ export const coats = [
         {
                 image: fendi2,
                 url: fendiLogoBlack,
-                info: "Best elite dress ever",
+                info: "Dont look at it, its also costs money",
                 cost: "13.420$",
         },
         {
                 image: balenci1,
                 url: balenciLogoBlack,
-                info: "Best elite dress ever",
+                info: "I wish you would stay away, you reek of poverty",
                 cost: "13.190$",
         },
 ]
